@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TheBlog</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+        <div class="jumbotron ">
+          
+		  <h1 style="color: rgb(91, 99, 145);background-color: aqua;">MY FORM</h1>              
+		<div class='container'>
+	  <form method = "POST">
+	    {% csrf_token%}
+		{{ form.as_p }}
+		<button type = "Submit" name= "button" class= "btn btn-primary">Submit</button>
+		</div>
+        
+  
+    <div class="container my-5">
+      <h2>Chat with us</h2>
+      <p>Email:tech4ir@gmail.co.za </p>
+      <blockquote class="blockquote">
+        <p style="color: aqua;">Let’s embark on this journey together and build a future where technology serves as a force for good, driving progress and enhancing the human experience.</p>
+        <footer class="blockquote-footer" style="color: aqua;">4IRTECH
+          <div class="container mx-1">
+          <p>&copy; 2025 Fourt Industrial Revolution Tech Blog. All rights reserved.</p>
+      </div>
+        </footer>
+      </blockquote>
+    </div>
+      
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
